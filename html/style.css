@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@100;400;700;900&family=Unbounded:wght@200;400;700&display=swap');
+.container {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
+}
+
+.infoboard-main {
+    display: none;
+    position: absolute;
+    height: fit-content;
+    width: 25vh;
+    right: 2vh;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0.8vh;
+    padding-bottom: 0px;
+    animation: momo 1.1s;
+}
+
+.daddymomo {
+    width: 100%;
+    height: 100%;
+}
+
+.scoreboard-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 4.5vh;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    display: none;
+}
+
+.scoreboard-header>p {
+    text-align: center;
+    font-weight: bolder;
+    color: #ededed;
+    padding: 0.5vh;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 1.1vh;
+    font-style: italic;
+}
+
+#status-tab-label {
+    position: absolute;
+    font-family: 'Unbounded', sans-serif !important;
+    right: 3vh;
+}
+
+.info-beam-title {
+    position: absolute;
+    font-family: 'Unbounded', sans-serif !important;
+    font-size: 1.2vh;
+    letter-spacing: 0vh;
+    left: 0.7vh;
+    line-height: 3.5vh;
+    color: #ededed;
+    text-shadow: black 1px 0 5px;
+}
+
+.info-beam-title-players {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    font-family: 'Unbounded', sans-serif !important;
+    font-size: 1.2vh;
+    letter-spacing: 0vh;
+    left: 0.7vh;
+    line-height: 3.5vh;
+    text-shadow: black 1px 0 5px;
+}
+
+.info-beam-status {
+    position: absolute;
+    font-family: 'Unbounded', sans-serif !important;
+    font-size: 1.1vh;
+    right: 1.8vh;
+    float: left;
+    text-align: left;
+    line-height: 3.6vh;
+    color: #ededed;
+    text-shadow: black 1px 0 5px;
+}
+
+.scoreboard-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scoreboard-info-beam {
+    margin-top: .1vh;
+    position: relative;
+    height: 3.35vh;
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    background: radial-gradient(
+        circle,
+        rgba(19, 18, 18, 0.534) 10%,
+        rgb(0, 0, 0) 85%
+    );
+    flex-grow: 1;
+    box-shadow: 0px 1px 23px #00000020;
+}
+
+#total-players, #total-min{
+    
+    font-family: 'Unbounded', sans-serif !important;
+}
+
+.text{
+    color: #ededed;
+    text-shadow: black 1px 0 5px;
+
+}
+
+.fbusy {
+    color: #0c8ee5;
+}
+.fon {
+    color: rgb(22, 196, 22);
+}
+.foff {
+    color: rgba(255, 0, 0, 0.74);
+}
+
+@keyframes momo {
+    from {
+        opacity: 0;
+        right: -30vh;
+    }
+
+    to {
+        opacity: 1;
+        right: 2vh;
+    }
+}
+
+.somthingrandom:nth-child(odd) {
+    border-bottom-left-radius: .8vh;
+}
+
+.somethingrandom:nth-child(even) {
+    border-bottom-right-radius: .8vh;
+}
